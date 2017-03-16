@@ -12,5 +12,5 @@ function getProjectPath(directory) {
   if (pathAbove === directory) {
     return null;
   }
-  return getBasePath(pathAbove);
+  return getProjectPath(pathAbove);
 }
